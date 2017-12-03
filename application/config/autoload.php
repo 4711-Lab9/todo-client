@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('parser', 'parsedown', 'session');
+$autoload['libraries'] = array('parser', 'parsedown', 'session', 'curl', 'format', 'rest');
 
 /*
 | -------------------------------------------------------------------
@@ -133,3 +133,10 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 $autoload['model'] = array('app', 'tasks');
+
+/*
+| -------------------------------------------------------------------
+|  Auto-load RESTful package
+| -------------------------------------------------------------------
+*/
+$autoload['packages'] = array(APPPATH.'third_party/restful/');
